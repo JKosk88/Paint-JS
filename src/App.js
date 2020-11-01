@@ -126,7 +126,7 @@ function App() {
           </label>
           <label className="container">
             <input type="radio" name='color' value='rgb(255, 255, 255)' />
-            <span className="checkmark white" onDoubleClick={() => fillWithColor('rgb(255, 255, 55)')}></span>
+            <span className="checkmark white" onDoubleClick={() => fillWithColor('rgb(255, 255, 255)')}></span>
           </label>
         </form>
         
