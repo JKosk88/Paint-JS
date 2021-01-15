@@ -144,9 +144,9 @@ form {
 }
 
 .line {
-  box-shadow: -3px -3px 10px rgba(2, 202, 252, 0.7),
-    3px -3px 10px rgba(15, 12, 241, 0.7), -3px 3px 10px rgba(184, 4, 255, 0.7),
-    3px 3px 10px rgba(247, 6, 78, 0.7);
+  box-shadow: -3px -3px 10px rgba(2, 252, 219, 0.7),
+    3px -3px 10px rgba(12, 241, 153, 0.7), -3px 3px 10px rgba(4, 142, 255, 0.7),
+    3px 3px 10px rgba(0, 255, 200, 0.7);
 }
 
 #line {
