@@ -54,10 +54,6 @@ function App() {
       contextRef.current.moveTo(lineX, lineY);
       contextRef.current.lineTo(offsetX, offsetY);
       contextRef.current.stroke();
-      setIsDrawingLine(false);
-      setIsDrawing(false);
-      let element = document.getElementById("line");
-      element.classList.remove("line");
       return;
     }
     contextRef.current.closePath();
@@ -201,9 +197,15 @@ function App() {
           icon={faPencilRuler}
           className="fa-2x"
           onClick={() => {
-            setIsDrawingLine(true);
-            let element = document.getElementById("line");
-            element.classList.add("line");
+            if (isDrawingLine) {
+              setIsDrawingLine(false);
+              let element = document.getElementById("line");
+              element.classList.remove("line");
+            } else {
+              setIsDrawingLine(true);
+              let element = document.getElementById("line");
+              element.classList.add("line");
+            }
           }}
         />
       </div>
